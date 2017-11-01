@@ -1,0 +1,26 @@
+<div ng-style='bodyStyle'>
+  <h1 ng-style='headerStyle'>The robot takeover has begun.</h1>
+  <div ng-style='cardStyle' ng-repeat='user in vmUsers.users'>
+    <span>
+      <img ng-style='imgStyle' ng-src='https://robohash.org/{{ user.name }}.png?size=100x100' alt="Robot image">
+    </span><br>
+    <span>
+      {{user.name}}<br>
+      {{user.email}}<br>
+      <button ng-click='vmUsers.deleteUser(user)' type="button" name="button">Delete</button>
+    </span>
+  </div>
+  <form>
+    New user name:
+    <input type="text" ng-model="newUser.name" name="text" />
+    <br>
+    New user email:
+    <input type="text" ng-model="newUser.email" name="text" />
+    <br>
+
+    <button ng-style='buttonStyle' id="submitButton" ng-click='vmUsers.createUser(newUser)' type="submit" value="Submit">Submit</button>
+  </form>
+</div>
+
+
+<!-- ng-disabled to make sure user enters a name and email before submitting -->

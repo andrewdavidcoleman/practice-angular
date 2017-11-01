@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "authors": [
+    "Andrew Coleman <Andrew@lawn-128-61-127-169.lawn.gatech.edu>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
